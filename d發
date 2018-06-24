@@ -1,0 +1,40 @@
+[33mcommit 5c3eac20321346269998dec7d013778c94acd36d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/testTow[m[33m, [m[1;32mtestTow[m[33m)[m
+Author: username <you@example.com>
+Date:   Sat Jun 23 19:09:16 2018 +0800
+
+    API description
+
+[33mcommit e7d77ef7a21d11a6d8c7c264962619fd3568e389[m
+Author: shelly1123 <32784622+shelly1123@users.noreply.github.com>
+Date:   Sat Oct 14 09:54:13 2017 +0800
+
+    AA
+    
+    SS
+
+[33mcommit 307af5096ea2d8915f4cd1e1fa1a344c4ee7df39[m
+Author: hanhailong <hanhailong.cool@163.com>
+Date:   Tue Feb 2 19:38:10 2016 +0800
+
+    优化星级评分条
+
+[33mcommit 29f269f2cfce83c158b87232a78b8c4af1c728ba[m
+Merge: ad0c3ff 616f5e7
+Author: hanhailong <hailonghan@HailongHantekiMacBook-Pro.local>
+Date:   Fri Jul 3 10:06:09 2015 +0800
+
+    Merge branch 'master' of https://github.com/hanhailong/CustomRatingBar
+    
+    初始化提交
+
+[33mcommit ad0c3ff8fb36aaaa75e3de1cd3a7f8a769b915dd[m
+Author: hanhailong <hailonghan@HailongHantekiMacBook-Pro.local>
+Date:   Fri Jul 3 10:03:07 2015 +0800
+
+    初始化添加项目
+
+[33mcommit 616f5e77b5ad2735ef699c21a778af11ef26102c[m
+Author: 韩海龙 <hanhailong.cool@163.com>
+Date:   Fri Jul 3 10:00:32 2015 +0800
+
+    Initial commit
