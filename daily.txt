@@ -1,0 +1,27 @@
+192.168.1.15
+
+
+http://192.168.1.15/znsd/courses/tree/master  
+
+
+ctrl + F 快速查找		alt +  e 继承一个类   alt + a 实现一个类 
+多行注释
+
+Ctrl+shift + /			shift + end 或 home 快速选中行
+			
+取消多行注释			点击文件 compare With  可以恢复当前内容 
+
+Ctrl+shift + \
+
+
+注解
+/* +  Enter
+
+
+http://www.vvvdj.com/  清风
+
+首先安装 package control
+import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+
+
+sublime_text工具添加语法提示命令  打开  preferences + package control + Install Package + 搜索并安装 sublimecodeintel  
