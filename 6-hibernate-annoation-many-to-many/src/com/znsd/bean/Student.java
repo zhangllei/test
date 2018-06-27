@@ -33,7 +33,11 @@ public class Student implements Serializable {
 	@ManyToMany
 	@Cascade(value = {CascadeType.ALL})
 	//name = 指定一个中间表名      joinColumns=指定一个中间表的字段   inverseJoinColumns= 指定一个外键字段
-	@JoinTable(name = "t_class_stu",joinColumns = @JoinColumn(name = "stu_id"),inverseJoinColumns = @JoinColumn(name ="class_id"))
+	@JoinTable(
+		name = "t_class_stu",
+		joinColumns = @JoinColumn(name = "stu_id"),
+		inverseJoinColumns = @JoinColumn(name ="class_id")
+	  )
 	private Set<Classes> setCl = new HashSet<Classes>();
 
 	public Integer getId() {
