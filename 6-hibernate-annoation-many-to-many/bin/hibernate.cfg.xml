@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ <hibernate-configuration>
+    <session-factory>
+        <!-- 配置数据库连接信息 -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hibernatetwo</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <!-- 数据库方言 -->
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <!-- 在控制台输出sql语句 -->
+        <property name="show_sql">true</property>
+        <!-- 格式化sql语句 -->
+        <property name="format_sql">true</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <!-- 数据库生成策略 -->
+        <!-- 数据库方言：指数据库按照 那种数据库语法规则生成。 hibernate.hbm2ddl.auto：数据库生成策略 #hibernate.hbm2ddl.auto 
+            create-drop：系统启东时先创建数据库，系统退出时删除数据库 #hibernate.hbm2ddl.auto create：系统启动时先删除原有数据库，再创建新的数据库 
+            #hibernate.hbm2ddl.auto update：首先检测数据库是否存在，不存在则创建数据库，存在执行操作。 #hibernate.hbm2ddl.auto 
+            validate：验证表结构，不会创建表 -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.znsd.bean.Classes"/>
+        <mapping class="com.znsd.bean.Student"/>
+        <!-- 配置映射文件 -->
+        <!--注意配置文件名必须包含其相对于classpath 的全路径-->
+    </session-factory>
+</hibernate-configuration>
