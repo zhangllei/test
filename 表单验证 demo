@@ -1,1 +1,53 @@
-11
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title></title>
+    <style type="text/css">
+    	.classDiv{margin:5px 0px 5px 0px;} /* 调input之间的间距样式 */
+    </style>
+</head>
+<body>
+    <div>
+        <form action="" method="post">
+            <div class="classDiv">
+                <input style="height:25px;"  type="text" name="telephone" placeholder="手机号码"  required/>
+            </div>
+            
+            <div class="classDiv">
+                <input style="height:25px"  type="text" name="name" placeholder="姓名"  required/>
+            </div>
+            
+            <div class="classDiv">
+                <input style="height:25px"  type="text" name="gender" placeholder="性别"  required/>
+            </div>
+            
+            <div class="classDiv">
+                <input style="height:25px"  type="text" name="address" placeholder="地址"  required/>
+            </div>
+            
+            <button  class="login_btn" type="submit">登&nbsp;&nbsp;录</button>
+        </form>
+    </div>
+    <script th:src="@{../../js/jquery.min.js}"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		//为from表单下的所有input标签绑定失去焦点事件
+    		 $("form :input").blur(function () {
+    		       console.info(123);
+    		       var telephone = $("input[type=text][name=telephone]").val();
+    		       var name = $("input[type=text][name=name]").val(); //获取input text标签 name =name 标签的值
+    		       var gender = $("input[type=text][name=gender]").val(); 
+    		       var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;  //正则表达式校验手机号码
+    		       $("input[type=radio][name=status][value=[[${users.status}]]]").attr("checked",true);//默认选中单选框
+    		       if(!myreg.test(telephone)){
+    		    	  console.info("错误");
+    		       }
+    		      
+    		  });
+    	});
+    </script>
+</body>
+</html>
